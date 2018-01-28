@@ -1,1 +1,1 @@
-python -c 'import crypt,getpass;pw=getpass.getpass();print(crypt.crypt(pw) if (pw==getpass.getpass("Confirm: ")) else exit())'
+python -c 'import crypt;import getpass;pw=getpass.getpass();print(crypt.crypt(pw, salt=crypt.mksalt(crypt.METHOD_SHA512))) if (pw==getpass.getpass("Confirm: ")) else exit()'
