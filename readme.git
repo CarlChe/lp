@@ -6,3 +6,6 @@ It is open source
 I learned unstage with # git checkout HEAD <file>
 
 I learned discard change in working aread by # git checkout -- <file>
+
+
+new change
